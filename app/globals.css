@@ -227,3 +227,13 @@ body {
 
   background: #333;
 }
+
+.menuBar {
+  background: #333;
+}
+
+
+.singleArticle {
+  width: 600px;
+  height: 350px;
+}

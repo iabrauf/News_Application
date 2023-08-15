@@ -1,5 +1,4 @@
 import React, { FC, MouseEvent } from 'react';
-
 interface PaginationProps {
   NewsPerPage: number;
   totalNews: number;
