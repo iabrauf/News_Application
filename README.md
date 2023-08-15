@@ -2,7 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, create .env.local file and create Api Key like this:
+NEXT_PUBLIC_API_KEY = 'Your_Api_Key'
+You can get this free api_key from [https://newsapi.org/](https://newsapi.org/)
+
+Then, run the development server:
 
 ```bash
 npm run dev
