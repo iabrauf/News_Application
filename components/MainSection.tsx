@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Home from "@/components/Home"
+import NewsSection from "@/components/NewsSection"
 import Pagination from './Pagination'
 
 
@@ -9,7 +9,7 @@ interface ArticlesPage {
   category: string;
   heading: string;
 }
-const ArticlesPage: React.FC<ArticlesPage> = ({ category, heading }) => {
+const MainSection: React.FC<ArticlesPage> = ({ category, heading }) => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
@@ -60,7 +60,7 @@ const ArticlesPage: React.FC<ArticlesPage> = ({ category, heading }) => {
   }
   return (
     <>
-      <Home news={currentPosts} loading={loading} heading={heading} />
+      <NewsSection news={currentPosts} loading={loading} heading={heading} />
       <Pagination
         NewsPerPage={NewsPerPage}
         totalNews={news.length}
@@ -75,4 +75,4 @@ const ArticlesPage: React.FC<ArticlesPage> = ({ category, heading }) => {
   )
 }
 
-export default ArticlesPage 
+export default MainSection 

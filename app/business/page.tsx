@@ -1,7 +1,7 @@
-import ArticlesPage from '../../components/Articles'
+import MainSection from '../../components/MainSection'
 const BusinessPage = () => {
   return (
-    <ArticlesPage category={'business'} heading={'Business Headlines'} />
+    <MainSection category={'business'} heading={'Business Headlines'} />
   )
 }
 

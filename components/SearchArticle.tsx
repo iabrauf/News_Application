@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Home from "@/components/Home";
+import NewsSection from "@/components/NewsSection";
 import Pagination from './Pagination';
 import moment from 'moment';
 
@@ -136,7 +136,7 @@ const SearchArticle = () => {
           </button>
         </div>
       </form>
-      <Home news={currentPosts} loading={loading} heading={'News Application'} />
+      <NewsSection news={currentPosts} loading={loading} heading={'News Application'} />
       <Pagination
         NewsPerPage={NewsPerPage}
         totalNews={news.length}

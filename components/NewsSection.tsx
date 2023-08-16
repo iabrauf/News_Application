@@ -14,7 +14,7 @@ interface HomeProps {
   loading: boolean;
   heading: string
 }
-const Home: React.FC<HomeProps> = ({ news, loading, heading }) => {
+const NewsSection: React.FC<HomeProps> = ({ news, loading, heading }) => {
 
   const singleArticle = news.slice(0, 1);
   const restArticles = news.slice(1);
@@ -41,5 +41,5 @@ const Home: React.FC<HomeProps> = ({ news, loading, heading }) => {
   );
 }
 
-export default Home;
+export default NewsSection;
 
