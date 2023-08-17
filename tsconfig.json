@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/search/page.tsx", "components/NewsArticles.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/search/page.tsx", "components/NewsArticles.tsx", "redux/features/ReduxProvider.jsx", "components/MainSection.jsx"],
   "exclude": ["node_modules"]
 }

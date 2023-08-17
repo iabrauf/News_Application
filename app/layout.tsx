@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import Header from '@/components/Header'
+import ReduxProvide from '@/redux/features/ReduxProvider'
 
 const roboto = Roboto({
   weight: ['400', '700'],
@@ -21,7 +22,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className}>
         <Header />
-        <main >{children}</main></body>
+        <main>
+          <ReduxProvide>
+            {children}
+          </ReduxProvide>
+        </main>
+      </body>
     </html>
   )
 }
